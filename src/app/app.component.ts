@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Heroe } from './interfaces/heroe.interfaces';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'entendiendoOutput2';
+  public recibeNombre(nombre : string){
+    console.log(nombre);
+  }
+  public recibeHeroe(heroes : Heroe){
+    console.log(heroes);
+  }
 }
